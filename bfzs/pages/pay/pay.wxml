@@ -1,0 +1,43 @@
+<!-- 收货地址 -->
+<view class="address_row">
+    <view class="address_info">
+        <view class="info_left">
+            <view class="name">{{address.userName}}</view>
+            <view class="address">{{address.all}}</view>
+        </view>
+        <view class="info_right">{{address.telNumber}}</view>
+    </view>
+</view>
+
+<!-- 商品 -->
+<view class="cart_content"
+        wx:for="{{checkedCart}}"
+        wx:key="goods_id"
+        >
+        <view class="img_wrap">
+            <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </view>
+        <view class="info_wrap">
+            <view class="info_name">{{item.goods_name}}</view>
+            <view class="price_row">
+                <view class="info_price">￥{{item.goods_price * item.num}}</view>
+                <view class="count_num">x {{item.num}}</view>
+            </view>
+        </view>
+</view>
+
+<!-- 底部工具 -->
+
+<view class="btm_tool">
+    <!-- 总价 -->
+    <view class="total_price_wrap">
+        <view class="total_price">
+            合计：<text class="total_price_text">￥{{totalPrice}}</text>
+        </view>
+        <view class="discri">包含运费</view>
+    </view>
+    <!-- 结算 -->
+    <view class="order_pay_wrap" bind:tap="handlePay">
+        支付({{totalNum}})
+    </view>
+</view>

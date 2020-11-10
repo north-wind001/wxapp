@@ -1,0 +1,123 @@
+.address_row .address_btm {
+  padding: 20rpx;
+}
+.address_row .address_btm button {
+  width: 60%;
+}
+.address_row .address_info {
+  padding: 20rpx;
+  display: flex;
+}
+.address_row .address_info .info_left {
+  flex: 5;
+}
+.address_row .address_info .info_right {
+  flex: 3;
+  text-align: right;
+}
+.cart_row .cart_title {
+  color: var(--themecolor);
+  font-size: 40rpx;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.cart_row .cart_content {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cart_row .cart_content .check_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_row .cart_content .img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_row .cart_content .img_wrap image {
+  width: 80%;
+}
+.cart_row .cart_content .info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_row .cart_content .info_wrap .info_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 24rpx;
+}
+.cart_row .cart_content .info_wrap .price_row {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_row .cart_content .info_wrap .price_row .info_price {
+  color: var(--themecolor);
+  font-size: 34rpx;
+}
+.cart_row .cart_content .info_wrap .price_row .info_count_wrap {
+  display: flex;
+}
+.cart_row .cart_content .info_wrap .price_row .info_count_wrap .count_cacu {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.cart_row .cart_content .info_wrap .price_row .info_count_wrap .count_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+page {
+  padding-bottom: 80rpx;
+}
+.btm_tool {
+  border-top: 1px solid #ccc;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+}
+.btm_tool .all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btm_tool .total_price_wrap {
+  flex: 4;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rpx;
+}
+.btm_tool .total_price_wrap .total_price .total_price_text {
+  color: var(--themecolor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.btm_tool .total_price_wrap .discri {
+  font-size: 20rpx;
+  font-weight: 600;
+}
+.btm_tool .order_pay_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  background-color: #ff0000;
+}
